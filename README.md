@@ -1,9 +1,6 @@
 # ffc-grants-performance-tests
 
-A JMeter based test runner for the CDP Platform.
-
-- [Licence](#licence)
-  - [About the licence](#about-the-licence)
+This repository contains the performance tests for the integrated journey between multiple deployed services that delivers a Grant Application journey.
 
 ## Build
 
