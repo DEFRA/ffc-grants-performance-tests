@@ -28,7 +28,7 @@
       </CookieManager>
       <hashTree/>
       <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults">
-        <stringProp name="HTTPSampler.domain">forms-runner-v2.test.cdp-int.defra.cloud</stringProp>
+        <stringProp name="HTTPSampler.domain">forms-runner-v2.${__P(env)}.cdp-int.defra.cloud</stringProp>
         <stringProp name="HTTPSampler.protocol">https</stringProp>
         <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
           <collectionProp name="Arguments.arguments"/>
