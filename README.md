@@ -2,42 +2,23 @@
 
 This repository contains the performance tests for the integrated journey between multiple deployed services that delivers a Grant Application journey.
 
-## Build
+There is a single test that, for each grant in sequence:
 
-Test suites are built automatically by the [.github/workflows/publish.yml](.github/workflows/publish.yml) action whenever a change are committed to the `main` branch.
-A successful build results in a Docker container that is capable of running your tests on the CDP Platform and publishing the results to the CDP Portal.
+- Runs for 30 seconds
+- Ramps up to 50 threads following the full grant journey with a 3 second interval between interactions
+- Asserts that all requests receive an HTTP 200 Ok response
+- Asserts that the average response time is under 500 ms
+- Asserts that no single response is greater that 3000 ms
 
-## Run
+The intention is to prevent an unexpected performance regression being introduced to the service.
 
-The performance test suites are designed to be run from the CDP Portal.
-The CDP Platform runs test suites in much the same way it runs any other service, it takes a docker image and runs it as an ECS task, automatically provisioning infrastructure as required.
+### Running locally
 
-## Local Testing with LocalStack
+Use JMeter GUI. Set the `Server Name` in `HTTP Request Defaults` to an instance of service `forms-runner-v2`, either hosted or local, and use JMeter to run the test. 
 
-### Build a new Docker image
-```
-docker build . -t my-performance-tests
-```
-### Create a Localstack bucket
-```
-aws --endpoint-url=localhost:4566 s3 mb s3://my-bucket
-```
+### CDP Portal
 
-### Run performance tests
-
-```
-docker run \
--e S3_ENDPOINT='http://host.docker.internal:4566' \
--e RESULTS_OUTPUT_S3_PATH='s3://my-bucket' \
--e AWS_ACCESS_KEY_ID='test' \
--e AWS_SECRET_ACCESS_KEY='test' \
--e AWS_SECRET_KEY='test' \
--e AWS_REGION='eu-west-2' \
-my-performance-tests
-```
-
-docker run -e S3_ENDPOINT='http://host.docker.internal:4566' -e RESULTS_OUTPUT_S3_PATH='s3://cdp-infra-dev-test-results/cdp-portal-perf-tests/95a01432-8f47-40d2-8233-76514da2236a' -e AWS_ACCESS_KEY_ID='test' -e AWS_SECRET_ACCESS_KEY='test' -e AWS_SECRET_KEY='test' -e AWS_REGION='eu-west-2' -e ENVIRONMENT='perf-test' my-performance-tests
-
+Tests are run from the CDP Portal under the `Test Suites` section. Before any changes can be run, a new docker image must be built, this will happen automatically when a pull request is merged into the `main` branch. The reports from the test run are then available through the portal.
 
 ## Licence
 
