@@ -2,9 +2,9 @@
 
 This repository contains the performance tests for the integrated journey between multiple deployed services that delivers a Grant Application journey.
 
-There is a single test that, for each grant in sequence:
+There is a single test that, for *each grant* in sequence:
 
-- Runs for 30 seconds
+- Runs for 180 seconds
 - Ramps up to 50 threads following the full grant journey with a 3 second interval between interactions
 - Asserts that all requests receive an HTTP 200 Ok response
 - Asserts that the average response time is under 500 ms
