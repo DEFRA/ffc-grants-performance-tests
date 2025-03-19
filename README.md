@@ -9,6 +9,7 @@ There is a single test that, for *each grant* in sequence:
 - Asserts that all requests receive an HTTP 200 Ok response
 - Asserts that the average response time is under 500 ms
 - Asserts that no single response is greater that 3000 ms
+- Currently we do not submit the final application for email sending as this can generate 429 responses from GOV Notify
 
 The intention is to prevent an unexpected performance regression being introduced to the service.
 
