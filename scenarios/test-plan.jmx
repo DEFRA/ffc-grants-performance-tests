@@ -865,40 +865,40 @@ JMeterUtils.setProperty(&quot;totalResponseTimeMs&quot;, String.valueOf(totalRes
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">agentLandlineNumber</stringProp>
               </elementProp>
-              <elementProp name="agentAddressLineOne" elementType="HTTPArgument">
+              <elementProp name="agentBusinessAddress__addressLine1" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
                 <stringProp name="Argument.value">High Street</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">agentAddressLineOne</stringProp>
+                <stringProp name="Argument.name">agentBusinessAddress__addressLine1</stringProp>
               </elementProp>
-              <elementProp name="agentAddressLineTwo" elementType="HTTPArgument">
+              <elementProp name="agentBusinessAddress__addressLine2" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
                 <stringProp name="Argument.value">Denton</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">agentAddressLineTwo</stringProp>
+                <stringProp name="Argument.name">agentBusinessAddress__addressLine2</stringProp>
               </elementProp>
-              <elementProp name="agentTown" elementType="HTTPArgument">
+              <elementProp name="agentBusinessAddress__town" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
                 <stringProp name="Argument.value">Northampton</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">agentTown</stringProp>
+                <stringProp name="Argument.name">agentBusinessAddress__town</stringProp>
               </elementProp>
-              <elementProp name="agentCounty" elementType="HTTPArgument">
+              <elementProp name="agentBusinessAddress__county" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                <stringProp name="Argument.value">counties-list-A35</stringProp>
+                <stringProp name="Argument.value">Northamptonshire</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">agentCounty</stringProp>
+                <stringProp name="Argument.name">agentBusinessAddress__county</stringProp>
               </elementProp>
-              <elementProp name="agentPostcode" elementType="HTTPArgument">
+              <elementProp name="agentBusinessAddress__postcode" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
                 <stringProp name="Argument.value">NN7 3NN</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">agentPostcode</stringProp>
+                <stringProp name="Argument.name">agentBusinessAddress__postcode</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
@@ -968,40 +968,40 @@ JMeterUtils.setProperty(&quot;totalResponseTimeMs&quot;, String.valueOf(totalRes
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">applicantLandlineNumber</stringProp>
               </elementProp>
-              <elementProp name="applicantAddressLineOne" elementType="HTTPArgument">
+              <elementProp name="applicantBusinessAddress__addressLine1" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
                 <stringProp name="Argument.value">Test Farm</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">applicantAddressLineOne</stringProp>
+                <stringProp name="Argument.name">applicantBusinessAddress__addressLine1</stringProp>
               </elementProp>
-              <elementProp name="applicantAddressLineTwo" elementType="HTTPArgument">
+              <elementProp name="applicantBusinessAddress__addressLine2" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
                 <stringProp name="Argument.value">Cogenhoe</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">applicantAddressLineTwo</stringProp>
+                <stringProp name="Argument.name">applicantBusinessAddress__addressLine2</stringProp>
               </elementProp>
-              <elementProp name="applicantTown" elementType="HTTPArgument">
+              <elementProp name="applicantBusinessAddress__town" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
                 <stringProp name="Argument.value">Northampton</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">applicantTown</stringProp>
+                <stringProp name="Argument.name">applicantBusinessAddress__town</stringProp>
               </elementProp>
-              <elementProp name="applicantCounty" elementType="HTTPArgument">
+              <elementProp name="applicantBusinessAddress__county" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                <stringProp name="Argument.value">counties-list-A35</stringProp>
+                <stringProp name="Argument.value">Northamptonshire</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">applicantCounty</stringProp>
+                <stringProp name="Argument.name">applicantBusinessAddress__county</stringProp>
               </elementProp>
-              <elementProp name="applicantBusinessPostcode" elementType="HTTPArgument">
+              <elementProp name="applicantBusinessAddress__postcode" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
                 <stringProp name="Argument.value">NN7 1NN</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">applicantBusinessPostcode</stringProp>
+                <stringProp name="Argument.name">applicantBusinessAddress__postcode</stringProp>
               </elementProp>
               <elementProp name="applicantProjectPostcode" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
