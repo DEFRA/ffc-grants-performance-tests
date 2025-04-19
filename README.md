@@ -1,6 +1,6 @@
 # ffc-grants-performance-tests
 
-This repository contains the performance tests for the integrated journey between multiple deployed services that delivers a Grant Application journey.
+This is the performance test suite for non-land based grant application journeys maintained by Grant Application Enablement.
 
 There is a single test that, for *each grant* in sequence:
 
