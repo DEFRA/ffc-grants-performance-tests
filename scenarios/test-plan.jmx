@@ -96,7 +96,7 @@ SampleResult.setIgnore();</stringProp>
           <stringProp name="parameters"></stringProp>
           <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
 
-long thresholdMs = 1000;
+long thresholdMs = 500;
 long minimumSampleSize = 50;
 long requestCount = JMeterUtils.getPropDefault(&quot;requestCount&quot;, 0);
 long totalResponseTimeMs = JMeterUtils.getPropDefault(&quot;totalResponseTimeMs&quot;, 0);
@@ -298,7 +298,7 @@ SampleResult.setIgnore();</stringProp>
           <stringProp name="parameters"></stringProp>
           <stringProp name="script">import org.apache.jmeter.util.JMeterUtils;
 
-long thresholdMs = 1000;
+long thresholdMs = 500;
 long minimumSampleSize = 50;
 long requestCount = JMeterUtils.getPropDefault(&quot;requestCount&quot;, 0);
 long totalResponseTimeMs = JMeterUtils.getPropDefault(&quot;totalResponseTimeMs&quot;, 0);
